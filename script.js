@@ -75,7 +75,7 @@ function burstHearts() {
   for (let i = 0; i < 34; i += 1) {
     const heart = document.createElement('span');
     heart.className = 'confetti';
-    heart.textContent = Math.random() > 0.28 ? '♡' : '✳';
+    heart.textContent = '♡';
     heart.style.setProperty('--x', `${Math.random() * 100}%`);
     heart.style.setProperty('--drift', `${Math.random() * 180 - 90}px`);
     heart.style.setProperty('--dur', `${1.8 + Math.random() * 1.6}s`);
