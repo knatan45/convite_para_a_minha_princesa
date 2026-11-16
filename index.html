@@ -11,10 +11,10 @@
 </head>
 <body>
   <div class="paper-grain" aria-hidden="true"></div>
-  <div class="floating-decor decor-one" aria-hidden="true">✳</div>
-  <div class="floating-decor decor-two" aria-hidden="true">♡</div>
+
+
   <main class="app-shell">
-    <header class="topline"><span class="brand-mark">feito com carinho <i>✳</i></span><span class="step-label" id="stepLabel">UMA SURPRESA</span></header>
+    <header class="topline"><span class="brand-mark">feito com carinho <i aria-hidden="true"></i></span><span class="step-label" id="stepLabel">UMA SURPRESA</span></header>
     <div class="progress-track" aria-label="Progresso da surpresa"><span id="progressBar"></span></div>
 
     <section class="screen active" id="screen-intro" aria-labelledby="intro-title">
@@ -24,7 +24,7 @@
 
     <section class="screen" id="screen-questions" aria-labelledby="questionTitle" hidden>
       <div class="section-heading"><p class="eyebrow">rapidinho, prometo</p><h2 id="questionTitle">Uma pergunta<br><em>importante.</em></h2><div class="question-count" id="questionCount">01 / 03</div></div>
-      <div class="question-card"><span class="q-spark">✳</span><p class="question-text" id="questionText"></p><div class="answers" id="answers"></div><p class="reaction" id="reaction" aria-live="polite"></p><button class="text-button" id="nextQuestion" hidden>Próxima pergunta <span>→</span></button></div>
+      <div class="question-card"><span class="q-spark" aria-hidden="true"></span><p class="question-text" id="questionText"></p><div class="answers" id="answers"></div><p class="reaction" id="reaction" aria-live="polite"></p><button class="text-button" id="nextQuestion" hidden>Próxima pergunta <span>→</span></button></div>
       <button class="back-link" data-back="intro">← voltar</button>
     </section>
 
