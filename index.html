@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f1e8">
+  <meta name="description" content="Uma surpresa feita com carinho para Victória.">
+  <title>Uma surpresa para Victória ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="floating-decor decor-one" aria-hidden="true">✳</div>
+  <div class="floating-decor decor-two" aria-hidden="true">♡</div>
+  <main class="app-shell">
+    <header class="topline"><span class="brand-mark">feito com carinho <i>✳</i></span><span class="step-label" id="stepLabel">UMA SURPRESA</span></header>
+    <div class="progress-track" aria-label="Progresso da surpresa"><span id="progressBar"></span></div>
+
+    <section class="screen active" id="screen-intro" aria-labelledby="intro-title">
+      <div class="intro-art" aria-hidden="true"><div class="sunburst"></div><div class="envelope"><div class="envelope-flap"></div><span>V</span></div><span class="scribble s1">para você</span><span class="scribble s2">♡</span></div>
+      <div class="intro-copy"><p class="eyebrow">uma cartinha digital</p><h1 id="intro-title">Oi, minha<br><em>baixinha!</em> <span class="heart">♡</span></h1><p class="lead">Preparei uma coisinha para você... Mas antes, preciso saber se está pronta para uma pequena surpresa.</p><button class="button button-primary" data-next="questions">Estou curiosa! <span>↗</span></button><p class="tiny-note">prometo que vale a pena abrir</p></div>
+    </section>
+
+    <section class="screen" id="screen-questions" aria-labelledby="questionTitle" hidden>
+      <div class="section-heading"><p class="eyebrow">rapidinho, prometo</p><h2 id="questionTitle">Uma pergunta<br><em>importante.</em></h2><div class="question-count" id="questionCount">01 / 03</div></div>
+      <div class="question-card"><span class="q-spark">✳</span><p class="question-text" id="questionText"></p><div class="answers" id="answers"></div><p class="reaction" id="reaction" aria-live="polite"></p><button class="text-button" id="nextQuestion" hidden>Próxima pergunta <span>→</span></button></div>
+      <button class="back-link" data-back="intro">← voltar</button>
+    </section>
+
+    <section class="screen" id="screen-invite" aria-labelledby="invite-title" hidden>
+      <div class="invite-layout"><div class="invite-copy"><p class="eyebrow">convite oficial · edição única</p><h2 id="invite-title">Então, minha menina...<br><em>tenho um convite!</em> <span class="heart">♡</span></h2><p class="lead">Queria reservar uma noite para nós dois, com comida boa, conversas, risadas e aquela companhia que eu gosto tanto.</p><div class="details-grid"><div><span>DATA</span><strong>25 de novembro<br>de 2026</strong></div><div><span>HORA</span><strong>20h20</strong></div><div><span>DESTINO</span><strong>Uma churrascaria</strong></div></div><button class="button button-primary accept-button" id="acceptButton">Aceito esse convite! <span>♡</span></button><p class="tiny-note">a resposta certa é a que te fizer sorrir</p></div><aside class="side-note"><span class="stamp">RESERVADO<br>PARA NÓS</span><div class="hand-heart">♡</div><p>uma noite sem pressa,<br>do jeitinho que a gente gosta</p><span class="side-date">25 · 11 · 26</span></aside></div>
+      <button class="back-link" data-back="questions">← voltar</button>
+    </section>
+
+    <section class="screen" id="screen-message" aria-labelledby="message-title" hidden>
+      <div class="message-wrap"><div class="celebrate-mark" aria-hidden="true">♡</div><p class="eyebrow">a resposta que eu queria</p><h2 id="message-title">Combinado,<br><em>meu amor.</em></h2><p class="message-body">O que eu mais quero é aproveitar sua companhia, dar boas risadas e guardar mais uma lembrança bonita com você, minha linda.</p><div class="fun-note"><span>OBSERVAÇÃO IMPORTANTE</span><p>A pessoa convidada está autorizada a repetir o prato quantas vezes quiser. Inclusive, não serão aceitas reclamações sobre o consumo de carne. KKKKK</p></div><button class="button button-primary" data-next="voucher">Ver meu presente <span>↗</span></button></div>
+    </section>
+
+    <section class="screen voucher-screen" id="screen-voucher" aria-labelledby="voucher-title" hidden>
+      <div class="voucher-intro"><p class="eyebrow">guarde este pedacinho da nossa noite</p><h2>Um vale feito<br><em>para você.</em></h2></div>
+      <article class="voucher" id="voucher">
+        <div class="voucher-left"><div class="voucher-top"><span class="mini-brand">♡ PARA VICTÓRIA</span><span class="voucher-number">Nº 025-1126</span></div><h1 id="voucher-title">VALE<br><span>CHURRAS</span></h1><p class="voucher-phrase">Este vale dá direito a uma noite de comida boa, companhia melhor ainda e risadas sem limite.</p><div class="voucher-info"><div><span>DESTINATÁRIA</span><b>Victória</b></div><div><span>VALIDADE</span><b>25/11/2026 · 20h20</b></div><div><span>EXPERIÊNCIA</span><b>Uma noite especial em uma churrascaria</b></div><div><span>ACOMPANHANTE</span><b>Eu <i>♡</i></b></div></div><div class="voucher-sign"><span>com carinho,</span><b>seu par de aventuras</b></div></div>
+        <div class="voucher-stub"><div class="stub-heart">♡</div><p>UMA NOITE<br>PARA NÓS</p><div class="barcode" aria-hidden="true"></div><span>25 · 11 · 2026</span></div>
+        <span class="voucher-seal" aria-hidden="true">feito<br>pra você</span>
+      </article>
+      <div class="voucher-actions"><button class="button button-primary" id="printButton">Imprimir / salvar em PDF <span>↗</span></button><button class="text-button" id="restartButton">Quero ver de novo ↺</button></div>
+      <p class="tiny-note">Dica: na janela de impressão, escolha “Salvar como PDF” para guardar o voucher.</p>
+    </section>
+    <footer class="footer-note">feito à mão, em versão digital <span>♡</span></footer>
+  </main>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+</body>
+</html>
